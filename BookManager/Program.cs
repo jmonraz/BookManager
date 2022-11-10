@@ -57,15 +57,12 @@ namespace BookManager
                 {
                     book.EraseBook();
                 }
+                else if(input == 4)
+                {
+                    book.ProgressByBook();
+                }
                 else if (input == 5)
                 {
-                    Console.Clear();
-                    Console.WriteLine("\n\n\n\n\n\n\n\t\t\t\t| 1) Display by Title            |");
-                    Console.WriteLine("\t\t\t\t| 2) Display by Author           |");
-                    Console.WriteLine("\t\t\t\t| 3) Display by Numbers of Pages |");
-                    Console.WriteLine("\t\t\t\t| 4) Display by Genre            |");
-                    Console.ReadKey();
-                    Console.Clear();
                     book.DisplayBooks();
                 }
                 else if(input ==8)
